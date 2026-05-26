@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto - FITxSTYLE</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    font-family: Arial, sans-serif;
+    
+    background-image:url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    color:#0D47A1;
+}
+
+/* HEADER */
+header{
+    background:#0D47A1;
+    color:white;
+    text-align:center;
+    padding:30px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1{
+    font-size:42px;
+    letter-spacing:2px;
+}
+
+/* CONTENEDOR */
+.contacto{
+    width:90%;
+    max-width:850px;
+    margin:50px auto;
+   background:rgba(255,255,255,0.95);
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.contacto:hover{
+    transform:translateY(-5px);
+}
+
+/* TITULO */
+.contacto h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:36px;
+    color:#0D47A1;
+}
+
+/* TEXTO */
+.contacto p{
+    font-size:22px;
+    margin:20px 0;
+    padding:10px;
+    background:#E3F2FD;
+    border-radius:10px;
+}
+
+/* BOTONES */
+.redes{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin-top:35px;
+}
+
+.redes a{
+    text-decoration:none;
+    color:white;
+    padding:18px;
+    border-radius:12px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+/* EFECTO */
+.redes a:hover{
+    transform:scale(1.04);
+    opacity:0.9;
+}
+
+/* COLORES */
+.whatsapp{
+    background:#25D366;
+}
+
+.instagram{
+    background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF,#515BD4);
+}
+
+.gmail{
+    background:#EA4335;
+}
+
+/* FOOTER */
+footer{
+    background:#0D47A1;
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:40px;
+    font-size:18px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>FITxSTYLE</h1>
+</header>
+
+<section class="contacto">
+
+    <h2>Contáctanos</h2>
+
+    <p>📍 Dirección: Najayo en Medio Sancristobal, República Dominicana</p>
+    <p>📞 Teléfono: +1 809-402-6838</p>
+    <p>⏰ Horario: Lunes a Sábado de 8:00 AM a 6:00 PM</p>
+
+    <div class="redes">
+
+        <!-- WHATSAPP -->
+        <a class="whatsapp"
+        href="https://wa.me/18094026838"
+        target="_blank">
+        WhatsApp
+        </a>
+
+        <!-- INSTAGRAM -->
+        <a class="instagram"
+        href="https://www.instagram.com/leison_mateo/"
+        target="_blank">
+        Instagram
+        </a>
+
+        <!-- GMAIL -->
+        <a class="gmail"
+        href="mailto:leisonpascualmateo.com@gmail.com">
+        Gmail
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 FITxSTYLE🥇 - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeria</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ESTILO GENERAL */
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#E3F2FD; /* azul claro */
+    color:#0D47A1; /* azul oscuro */
+    text-align:center;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(rgba(13,71,161,0.7), rgba(13,71,161,0.7)), url('one.png');
+    background-size:cover;
+    background-position:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:4em;
+    letter-spacing:4px;
+    color:white;
+}
+
+header p{
+    margin-top:15px;
+    font-size:1.2em;
+    color:#E3F2FD;
+}
+
+/* NAV (BOTONES AZULES) */
+nav{
+    background:#0D47A1;
+    padding:20px;
+}
+
+nav a{
+    display:inline-block;
+    background:#1976D2; /* azul fuerte */
+    color:white;
+    padding:10px 20px;
+    margin:10px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#0D47A1;
+    transform:scale(1.1);
+}
+
+/* SECCIONES */
+section{
+    padding:60px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+h2{
+    margin-bottom:40px;
+    color:#0D47A1;
+    font-size:2em;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.4s;
+    color:#0D47A1;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #1976D2;
+}
+
+.card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+/* VIDEO */
+video{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:25px;
+    border:2px solid #1976D2;
+}
+
+/* BOTON */
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#1976D2;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    margin-top:15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0D47A1;
+}
+
+/* FOOTER */
+footer{
+    background:#0D47A1;
+    padding:25px;
+    color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Galeria👔</h1>
+    <p> Para mas variedad de nuestros productos toque pedir para tener mas informacion y nuestros contactos.</p>
+</header>
+
+<nav>
+    <a href="#T-Shirts">T-Shirts</a>
+    <a href="#Jeans">Jeans</a>
+    <a href="#Camisas">Camisas</a>
+    <a href="#Shorts deportivos">Shorts deportivos</a>
+    <a href="#Zapatos">Zapatos</a>
+    <a href="#Gorras">Gorras</a>
+    <a href="#Tenis">Tenis</a>
+    <a href="#Sudaderas">Sudaderas</a>
+    
+</nav>
+
+<section id="T-Shirts">
+    <h2>T-Shirts</h2>
+    <div class="grid">
+
+        <div class="card">
+            <img src="T-1.avif">
+            <h3>$750</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="T-2.jpg">
+            <h3>$800</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="T-3.jpg">
+            <h3>$700</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="T-4.jpg">
+            <h3>$1000</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+            </a>
+        </div>
+
+
+    </div>
+</section>
+
+<section id="Jeans">
+    <h2>Jeans</h2>
+    <div class="grid">
+
+        <div class="card">
+            <img src="J-1.jfif">
+            <h3>$1200</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+          <a href="#">
+        <div class="card">
+            <img src="J-2.jpg">
+            <h3>$1500</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="J-3.webp">
+            <h3>$1300</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="J-4.webp">
+            <h3>$1400</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="Camisas">
+    <h2>Camisas</h2>
+    <div class="grid">
+
+        <div class="card">
+            <img src="C-1.jpg">
+            <h3>$500</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+          <a href="#">
+        <div class="card">
+            <img src="C-2.png">
+            <h3>$700</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="C-3.jpg">
+            <h3>%750</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="C-4.jpg">
+            <h3>$800</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="Shorts deportivos">
+    <h2>Shorts deportivos</h2>
+    <div class="grid">
+
+        <div class="card">
+            <img src="S-1.jfif">
+            <h3>$600</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+          <a href="#">
+        <div class="card">
+            <img src="S-2.webp">
+            <h3>$1000</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="S-3.webp">
+            <h3>$900</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="S-4.webp">
+            <h3>$950</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="Zapatos">
+    <h2>Zapatos</h2>
+    <div class="grid">
+
+        <div class="card">
+            <img src="Z-1.jpg">
+            <h3>$2500</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+          <a href="#">
+        <div class="card">
+            <img src="Z-2.jpg">
+            <h3>$3000</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="Z-3.webp">
+            <h3>$2900</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="Z-4.jpg">
+            <h3>$3500</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="Gorras">
+    <h2>Gorras</h2>
+    <div class="grid">
+
+        <div class="card">
+            <img src="G-1.webp">
+            <h3>$2100</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+          <a href="#">
+        <div class="card">
+            <img src="G-2.webp">
+            <h3>$3500</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="G-3.webp">
+            <h3>$2800</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="G-4.webp">
+            <h3>$2900</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="Tenis Deportivos">
+    <h2>Tenis Deportivos</h2>
+    <div class="grid">
+
+        <div class="card">
+            <img src="TD-1.jfif">
+            <h3>$2000</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+          <a href="#">
+        <div class="card">
+            <img src="TD-2.webp">
+            <h3>$2300</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="TD-3.webp">
+            <h3>$1800</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="TD-4.webp">
+            <h3>$2400</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="Sudaderas">
+    <h2>Sudaderas</h2>
+    <div class="grid">
+
+        <div class="card">
+            <img src="SU-1.jpg">
+            <h3>$4000</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+          <a href="#">
+        <div class="card">
+            <img src="SU-2.jfif">
+            <h3>$3700</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="SU-3.jfif">
+            <h3>$4200</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+        <div class="card">
+            <img src="SU-4.jpg">
+            <h3>$4100</h3>
+            <a href="file:///C:/Users/USA/Desktop/Trabajo%20Final%20Portales%20Web/Contactos.html" class="btn">Pedir</a>
+        </div>
+
+    </div>
+</section>
+
+
+<footer>
+    🥇NO HAY TIENDA MEJOR🥇
+</footer>
+
+</body>
+</html>
